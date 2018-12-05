@@ -1,0 +1,736 @@
+python version : 3.6.6 | packaged by conda-forge | (default, Jul 26 2018, 09:53:17)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-15)]
+torch  version : 0.4.0
+
+------------------------------------------------------- options --------------------------------------------------------
+             batch_size: 16                             cuda: 1                               epochs: 200               
+            evaluate_freq: 5                             gpu: 0                           img_root: datasets/           
+                lr: 0.01                      lr_strategy: finetune_style       market_root: /home/shuhan/ReID_data/DUKE/ReID_IDE_pytorch-master/data/
+          method: split_tune_1                       momentum: 0.9                         num_share_block: 1           
+            preFeaNet: True                         print_freq: 500                          record_freq: 5             
+resume: ../debug/joint_tune_0.01/epoch_90_checkpoint.pth.tar    save_path: ../debug/split_tune_1                    seed: 1                 
+sources: ['cuhk03', 'viper', 'ilids', '3dpes']             target: Market                            wd: 0.0001               
+------------------------------------------------------------------------------------------------------------------------
+loaded pre-trained feature net
+observing training stats: ('acc', 'loss', 'domain_acc') 
+validation stats: ('acc', 'map')
+=> loading checkpoint '../debug/joint_tune_0.01/epoch_90_checkpoint.pth.tar'
+=> loaded checkpoint '../debug/joint_tune_0.01/epoch_90_checkpoint.pth.tar' (epoch 91)
+
+==>>[2018-11-30 01:43:04] [Epoch=001/200] [Need: 00:00:00]
+  Epoch: [001][000/1729]   Freq 0.6   acc 0.000   loss 7.363   domain_acc 75.000   [2018-11-30 01:43:30]
+  Epoch: [001][500/1729]   Freq 7.4   acc 30.938   loss 4.699   domain_acc 98.890   [2018-11-30 02:01:12]
+  Epoch: [001][1000/1729]   Freq 5.6   acc 50.987   loss 3.010   domain_acc 99.220   [2018-11-30 02:30:32]
+  Epoch: [001][1500/1729]   Freq 6.0   acc 62.662   loss 2.239   domain_acc 99.434   [2018-11-30 02:49:52]
+  **Train**  acc 66.158   loss 2.018   domain_acc 99.469   
+  **Test**  acc 17.458   map 4.347   
+
+==>>[2018-11-30 03:04:36] [Epoch=002/200] [Need: 252:49:14]
+  Epoch: [002][000/1729]   Freq 0.5   acc 93.750   loss 0.453   domain_acc 100.000   [2018-11-30 03:05:11]
+  Epoch: [002][500/1729]   Freq 5.4   acc 92.490   loss 0.410   domain_acc 99.838   [2018-11-30 03:29:07]
+  Epoch: [002][1000/1729]   Freq 5.9   acc 93.082   loss 0.391   domain_acc 99.719   [2018-11-30 03:49:32]
+  Epoch: [002][1500/1729]   Freq 6.5   acc 93.088   loss 0.392   domain_acc 99.771   [2018-11-30 04:06:40]
+  **Train**  acc 93.096   loss 0.391   domain_acc 99.787   
+
+==>>[2018-11-30 04:15:28] [Epoch=003/200] [Need: 250:11:36]
+  Epoch: [003][000/1729]   Freq 3.3   acc 100.000   loss 0.049   domain_acc 100.000   [2018-11-30 04:15:33]
+  Epoch: [003][500/1729]   Freq 7.1   acc 93.288   loss 0.367   domain_acc 99.850   [2018-11-30 04:34:14]
+  Epoch: [003][1000/1729]   Freq 7.3   acc 93.738   loss 0.349   domain_acc 99.831   [2018-11-30 04:51:49]
+  Epoch: [003][1500/1729]   Freq 7.4   acc 92.826   loss 0.389   domain_acc 99.796   [2018-11-30 05:09:30]
+  **Train**  acc 92.929   loss 0.384   domain_acc 99.816   
+
+==>>[2018-11-30 05:18:10] [Epoch=004/200] [Need: 234:13:30]
+  Epoch: [004][000/1729]   Freq 23.3   acc 93.750   loss 0.108   domain_acc 100.000   [2018-11-30 05:18:11]
+  Epoch: [004][500/1729]   Freq 5.9   acc 94.124   loss 0.321   domain_acc 99.950   [2018-11-30 05:40:46]
+  Epoch: [004][1000/1729]   Freq 6.3   acc 93.981   loss 0.333   domain_acc 99.900   [2018-11-30 06:00:38]
+  Epoch: [004][1500/1729]   Freq 5.6   acc 94.025   loss 0.333   domain_acc 99.892   [2018-11-30 06:29:03]
+  **Train**  acc 94.158   loss 0.327   domain_acc 99.906   
+
+==>>[2018-11-30 06:37:20] [Epoch=005/200] [Need: 239:05:41]
+  Epoch: [005][000/1729]   Freq 13.7   acc 87.500   loss 0.739   domain_acc 100.000   [2018-11-30 06:37:21]
+  Epoch: [005][500/1729]   Freq 7.2   acc 94.436   loss 0.308   domain_acc 99.975   [2018-11-30 06:55:49]
+  Epoch: [005][1000/1729]   Freq 7.2   acc 94.705   loss 0.297   domain_acc 99.969   [2018-11-30 07:14:11]
+  Epoch: [005][1500/1729]   Freq 7.5   acc 94.820   loss 0.293   domain_acc 99.971   [2018-11-30 07:30:25]
+  **Train**  acc 94.795   loss 0.294   domain_acc 99.971   
+  **Test**  acc 4.958   map 0.845   
+
+==>>[2018-11-30 07:48:30] [Epoch=006/200] [Need: 233:06:18]
+  Epoch: [006][000/1729]   Freq 0.6   acc 93.750   loss 0.402   domain_acc 100.000   [2018-11-30 07:48:55]
+  Epoch: [006][500/1729]   Freq 8.4   acc 95.147   loss 0.271   domain_acc 99.975   [2018-11-30 08:04:19]
+  Epoch: [006][1000/1729]   Freq 8.1   acc 95.049   loss 0.276   domain_acc 99.963   [2018-11-30 08:21:17]
+  Epoch: [006][1500/1729]   Freq 8.0   acc 94.945   loss 0.282   domain_acc 99.967   [2018-11-30 08:38:25]
+  **Train**  acc 94.921   loss 0.283   domain_acc 99.971   
+
+==>>[2018-11-30 08:45:28] [Epoch=007/200] [Need: 226:27:09]
+  Epoch: [007][000/1729]   Freq 0.3   acc 93.750   loss 0.531   domain_acc 100.000   [2018-11-30 08:46:14]
+  Epoch: [007][500/1729]   Freq 3.2   acc 95.135   loss 0.270   domain_acc 99.988   [2018-11-30 09:27:01]
+  Epoch: [007][1000/1729]   Freq 5.5   acc 95.124   loss 0.271   domain_acc 99.975   [2018-11-30 09:33:55]
+  Epoch: [007][1500/1729]   Freq 7.6   acc 94.991   loss 0.279   domain_acc 99.963   [2018-11-30 09:38:20]
+  **Train**  acc 95.015   loss 0.276   domain_acc 99.967   
+
+==>>[2018-11-30 09:40:01] [Epoch=008/200] [Need: 218:02:07]
+  Epoch: [008][000/1729]   Freq 5.9   acc 100.000   loss 0.004   domain_acc 100.000   [2018-11-30 09:40:03]
+  Epoch: [008][500/1729]   Freq 26.4   acc 94.873   loss 0.279   domain_acc 99.975   [2018-11-30 09:45:04]
+  Epoch: [008][1000/1729]   Freq 23.5   acc 95.086   loss 0.271   domain_acc 99.981   [2018-11-30 09:51:23]
+  Epoch: [008][1500/1729]   Freq 26.8   acc 95.028   loss 0.274   domain_acc 99.983   [2018-11-30 09:54:59]
+  **Train**  acc 95.048   loss 0.273   domain_acc 99.986   
+
+==>>[2018-11-30 09:56:42] [Epoch=009/200] [Need: 196:25:46]
+  Epoch: [009][000/1729]   Freq 6.9   acc 93.750   loss 0.389   domain_acc 100.000   [2018-11-30 09:56:45]
+  Epoch: [009][500/1729]   Freq 29.0   acc 94.773   loss 0.282   domain_acc 100.000   [2018-11-30 10:01:18]
+  Epoch: [009][1000/1729]   Freq 30.1   acc 95.067   loss 0.269   domain_acc 100.000   [2018-11-30 10:05:35]
+  Epoch: [009][1500/1729]   Freq 34.0   acc 95.049   loss 0.272   domain_acc 100.000   [2018-11-30 10:08:28]
+  **Train**  acc 95.059   loss 0.271   domain_acc 100.000   
+
+==>>[2018-11-30 10:09:48] [Epoch=010/200] [Need: 178:17:39]
+  Epoch: [010][000/1729]   Freq 23.7   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 10:09:48]
+  Epoch: [010][500/1729]   Freq 45.7   acc 95.197   loss 0.260   domain_acc 99.975   [2018-11-30 10:12:43]
+  Epoch: [010][1000/1729]   Freq 45.9   acc 94.980   loss 0.272   domain_acc 99.969   [2018-11-30 10:15:36]
+  Epoch: [010][1500/1729]   Freq 46.1   acc 95.045   loss 0.268   domain_acc 99.979   [2018-11-30 10:18:29]
+  **Train**  acc 95.062   loss 0.267   domain_acc 99.982   
+  **Test**  acc 6.740   map 1.169   
+
+==>>[2018-11-30 10:25:08] [Epoch=011/200] [Need: 162:55:10]
+  Epoch: [011][000/1729]   Freq 21.2   acc 81.250   loss 1.032   domain_acc 100.000   [2018-11-30 10:25:09]
+  Epoch: [011][500/1729]   Freq 46.6   acc 95.122   loss 0.261   domain_acc 100.000   [2018-11-30 10:28:00]
+  Epoch: [011][1000/1729]   Freq 46.6   acc 95.224   loss 0.257   domain_acc 100.000   [2018-11-30 10:30:51]
+  Epoch: [011][1500/1729]   Freq 46.6   acc 95.137   loss 0.262   domain_acc 100.000   [2018-11-30 10:33:43]
+  **Train**  acc 95.062   loss 0.266   domain_acc 100.000   
+
+==>>[2018-11-30 10:35:03] [Epoch=012/200] [Need: 151:32:09]
+  Epoch: [012][000/1729]   Freq 7.7   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 10:35:05]
+  Epoch: [012][500/1729]   Freq 44.6   acc 94.973   loss 0.267   domain_acc 99.988   [2018-11-30 10:38:03]
+  Epoch: [012][1000/1729]   Freq 45.6   acc 95.086   loss 0.260   domain_acc 99.981   [2018-11-30 10:40:54]
+  Epoch: [012][1500/1729]   Freq 45.9   acc 94.995   loss 0.266   domain_acc 99.988   [2018-11-30 10:43:46]
+  **Train**  acc 95.033   loss 0.265   domain_acc 99.989   
+
+==>>[2018-11-30 10:45:05] [Epoch=013/200] [Need: 140:46:31]
+  Epoch: [013][000/1729]   Freq 13.4   acc 93.750   loss 0.373   domain_acc 100.000   [2018-11-30 10:45:06]
+  Epoch: [013][500/1729]   Freq 46.3   acc 95.172   loss 0.253   domain_acc 100.000   [2018-11-30 10:47:58]
+  Epoch: [013][1000/1729]   Freq 46.3   acc 95.049   loss 0.262   domain_acc 100.000   [2018-11-30 10:50:51]
+  Epoch: [013][1500/1729]   Freq 46.3   acc 95.078   loss 0.263   domain_acc 100.000   [2018-11-30 10:53:44]
+  **Train**  acc 95.069   loss 0.264   domain_acc 100.000   
+
+==>>[2018-11-30 10:55:03] [Epoch=014/200] [Need: 131:37:41]
+  Epoch: [014][000/1729]   Freq 23.8   acc 93.750   loss 0.357   domain_acc 100.000   [2018-11-30 10:55:04]
+  Epoch: [014][500/1729]   Freq 46.3   acc 94.785   loss 0.274   domain_acc 100.000   [2018-11-30 10:57:56]
+  Epoch: [014][1000/1729]   Freq 46.4   acc 95.005   loss 0.261   domain_acc 99.994   [2018-11-30 11:00:48]
+  Epoch: [014][1500/1729]   Freq 46.5   acc 95.024   loss 0.263   domain_acc 99.992   [2018-11-30 11:03:40]
+  **Train**  acc 95.055   loss 0.262   domain_acc 99.993   
+
+==>>[2018-11-30 11:04:59] [Epoch=015/200] [Need: 123:45:24]
+  Epoch: [015][000/1729]   Freq 26.5   acc 100.000   loss 0.008   domain_acc 100.000   [2018-11-30 11:05:00]
+  Epoch: [015][500/1729]   Freq 46.4   acc 95.135   loss 0.251   domain_acc 100.000   [2018-11-30 11:07:52]
+  Epoch: [015][1000/1729]   Freq 46.4   acc 95.080   loss 0.257   domain_acc 99.988   [2018-11-30 11:10:44]
+  Epoch: [015][1500/1729]   Freq 46.4   acc 94.991   loss 0.262   domain_acc 99.988   [2018-11-30 11:13:36]
+  **Train**  acc 95.012   loss 0.262   domain_acc 99.989   
+  **Test**  acc 4.157   map 0.794   
+
+==>>[2018-11-30 11:20:03] [Epoch=016/200] [Need: 116:58:08]
+  Epoch: [016][000/1729]   Freq 22.6   acc 93.750   loss 0.352   domain_acc 100.000   [2018-11-30 11:20:04]
+  Epoch: [016][500/1729]   Freq 46.6   acc 95.047   loss 0.257   domain_acc 99.938   [2018-11-30 11:22:55]
+  Epoch: [016][1000/1729]   Freq 46.6   acc 95.167   loss 0.253   domain_acc 99.963   [2018-11-30 11:25:47]
+  Epoch: [016][1500/1729]   Freq 46.6   acc 95.137   loss 0.256   domain_acc 99.967   [2018-11-30 11:28:38]
+  **Train**  acc 95.073   loss 0.259   domain_acc 99.967   
+
+==>>[2018-11-30 11:29:58] [Epoch=017/200] [Need: 111:52:41]
+  Epoch: [017][000/1729]   Freq 20.1   acc 87.500   loss 0.696   domain_acc 100.000   [2018-11-30 11:29:59]
+  Epoch: [017][500/1729]   Freq 46.6   acc 95.172   loss 0.256   domain_acc 100.000   [2018-11-30 11:32:50]
+  Epoch: [017][1000/1729]   Freq 46.6   acc 95.061   loss 0.261   domain_acc 99.988   [2018-11-30 11:35:42]
+  Epoch: [017][1500/1729]   Freq 46.6   acc 95.107   loss 0.258   domain_acc 99.992   [2018-11-30 11:38:33]
+  **Train**  acc 95.026   loss 0.262   domain_acc 99.993   
+
+==>>[2018-11-30 11:39:52] [Epoch=018/200] [Need: 106:29:23]
+  Epoch: [018][000/1729]   Freq 21.0   acc 93.750   loss 0.359   domain_acc 100.000   [2018-11-30 11:39:53]
+  Epoch: [018][500/1729]   Freq 46.5   acc 95.060   loss 0.257   domain_acc 100.000   [2018-11-30 11:42:45]
+  Epoch: [018][1000/1729]   Freq 46.5   acc 95.117   loss 0.255   domain_acc 100.000   [2018-11-30 11:45:37]
+  Epoch: [018][1500/1729]   Freq 46.4   acc 95.049   loss 0.259   domain_acc 100.000   [2018-11-30 11:48:30]
+  **Train**  acc 95.080   loss 0.257   domain_acc 100.000   
+
+==>>[2018-11-30 11:49:49] [Epoch=019/200] [Need: 101:41:19]
+  Epoch: [019][000/1729]   Freq 21.6   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 11:49:50]
+  Epoch: [019][500/1729]   Freq 45.0   acc 95.235   loss 0.247   domain_acc 100.000   [2018-11-30 11:52:47]
+  Epoch: [019][1000/1729]   Freq 45.2   acc 95.199   loss 0.251   domain_acc 100.000   [2018-11-30 11:55:44]
+  Epoch: [019][1500/1729]   Freq 45.2   acc 95.012   loss 0.261   domain_acc 100.000   [2018-11-30 11:58:41]
+  **Train**  acc 95.084   loss 0.258   domain_acc 100.000   
+
+==>>[2018-11-30 12:00:02] [Epoch=020/200] [Need: 97:24:56]
+  Epoch: [020][000/1729]   Freq 13.3   acc 93.750   loss 0.312   domain_acc 100.000   [2018-11-30 12:00:03]
+  Epoch: [020][500/1729]   Freq 24.7   acc 95.397   loss 0.240   domain_acc 100.000   [2018-11-30 12:05:26]
+  Epoch: [020][1000/1729]   Freq 17.5   acc 95.286   loss 0.247   domain_acc 100.000   [2018-11-30 12:15:17]
+  Epoch: [020][1500/1729]   Freq 17.8   acc 95.216   loss 0.251   domain_acc 100.000   [2018-11-30 12:22:29]
+  **Train**  acc 95.134   loss 0.255   domain_acc 100.000   
+  **Test**  acc 8.343   map 1.398   
+
+==>>[2018-11-30 12:34:08] [Epoch=021/200] [Need: 96:23:41]
+  Epoch: [021][000/1729]   Freq 2.9   acc 81.250   loss 0.877   domain_acc 100.000   [2018-11-30 12:34:14]
+  Epoch: [021][500/1729]   Freq 15.7   acc 95.172   loss 0.250   domain_acc 100.000   [2018-11-30 12:42:38]
+  Epoch: [021][1000/1729]   Freq 16.8   acc 95.273   loss 0.245   domain_acc 100.000   [2018-11-30 12:50:01]
+  Epoch: [021][1500/1729]   Freq 20.9   acc 95.107   loss 0.255   domain_acc 100.000   [2018-11-30 12:53:15]
+  **Train**  acc 95.120   loss 0.255   domain_acc 100.000   
+
+==>>[2018-11-30 12:54:35] [Epoch=022/200] [Need: 94:51:58]
+  Epoch: [022][000/1729]   Freq 9.7   acc 100.000   loss 0.004   domain_acc 100.000   [2018-11-30 12:54:37]
+  Epoch: [022][500/1729]   Freq 45.0   acc 95.197   loss 0.244   domain_acc 100.000   [2018-11-30 12:57:33]
+  Epoch: [022][1000/1729]   Freq 45.6   acc 95.167   loss 0.247   domain_acc 100.000   [2018-11-30 13:00:27]
+  Epoch: [022][1500/1729]   Freq 45.8   acc 95.095   loss 0.253   domain_acc 100.000   [2018-11-30 13:03:19]
+  **Train**  acc 95.091   loss 0.253   domain_acc 100.000   
+
+==>>[2018-11-30 13:04:39] [Epoch=023/200] [Need: 91:23:39]
+  Epoch: [023][000/1729]   Freq 12.0   acc 93.750   loss 0.370   domain_acc 100.000   [2018-11-30 13:04:40]
+  Epoch: [023][500/1729]   Freq 45.8   acc 95.160   loss 0.248   domain_acc 100.000   [2018-11-30 13:07:34]
+  Epoch: [023][1000/1729]   Freq 46.1   acc 94.980   loss 0.258   domain_acc 100.000   [2018-11-30 13:10:26]
+  Epoch: [023][1500/1729]   Freq 46.3   acc 94.991   loss 0.258   domain_acc 100.000   [2018-11-30 13:13:18]
+  **Train**  acc 95.051   loss 0.255   domain_acc 100.000   
+
+==>>[2018-11-30 13:14:37] [Epoch=024/200] [Need: 88:11:51]
+  Epoch: [024][000/1729]   Freq 11.1   acc 100.000   loss 0.002   domain_acc 100.000   [2018-11-30 13:14:38]
+  Epoch: [024][500/1729]   Freq 46.2   acc 95.035   loss 0.254   domain_acc 100.000   [2018-11-30 13:17:30]
+  Epoch: [024][1000/1729]   Freq 46.3   acc 94.968   loss 0.258   domain_acc 99.988   [2018-11-30 13:20:22]
+  Epoch: [024][1500/1729]   Freq 46.4   acc 95.116   loss 0.251   domain_acc 99.992   [2018-11-30 13:23:14]
+  **Train**  acc 95.106   loss 0.251   domain_acc 99.993   
+
+==>>[2018-11-30 13:24:34] [Epoch=025/200] [Need: 85:15:05]
+  Epoch: [025][000/1729]   Freq 13.9   acc 87.500   loss 0.624   domain_acc 100.000   [2018-11-30 13:24:35]
+  Epoch: [025][500/1729]   Freq 46.3   acc 95.097   loss 0.252   domain_acc 100.000   [2018-11-30 13:27:27]
+  Epoch: [025][1000/1729]   Freq 45.7   acc 95.149   loss 0.250   domain_acc 99.994   [2018-11-30 13:30:24]
+  Epoch: [025][1500/1729]   Freq 45.9   acc 95.149   loss 0.250   domain_acc 99.988   [2018-11-30 13:33:17]
+  **Train**  acc 95.138   loss 0.250   domain_acc 99.989   
+  **Test**  acc 8.284   map 1.512   
+
+==>>[2018-11-30 13:39:51] [Epoch=026/200] [Need: 82:34:57]
+  Epoch: [026][000/1729]   Freq 24.4   acc 100.000   loss 0.002   domain_acc 100.000   [2018-11-30 13:39:52]
+  Epoch: [026][500/1729]   Freq 46.4   acc 95.696   loss 0.224   domain_acc 100.000   [2018-11-30 13:42:44]
+  Epoch: [026][1000/1729]   Freq 46.4   acc 95.367   loss 0.238   domain_acc 99.988   [2018-11-30 13:45:37]
+  Epoch: [026][1500/1729]   Freq 46.3   acc 95.216   loss 0.246   domain_acc 99.992   [2018-11-30 13:48:30]
+  **Train**  acc 95.142   loss 0.249   domain_acc 99.993   
+
+==>>[2018-11-30 13:49:50] [Epoch=027/200] [Need: 80:35:47]
+  Epoch: [027][000/1729]   Freq 14.8   acc 87.500   loss 0.726   domain_acc 100.000   [2018-11-30 13:49:51]
+  Epoch: [027][500/1729]   Freq 46.2   acc 94.923   loss 0.262   domain_acc 100.000   [2018-11-30 13:52:43]
+  Epoch: [027][1000/1729]   Freq 46.4   acc 95.086   loss 0.253   domain_acc 100.000   [2018-11-30 13:55:35]
+  Epoch: [027][1500/1729]   Freq 46.4   acc 95.199   loss 0.248   domain_acc 100.000   [2018-11-30 13:58:27]
+  **Train**  acc 95.200   loss 0.248   domain_acc 100.000   
+
+==>>[2018-11-30 13:59:46] [Epoch=028/200] [Need: 78:13:05]
+  Epoch: [028][000/1729]   Freq 21.5   acc 100.000   loss 0.044   domain_acc 100.000   [2018-11-30 13:59:47]
+  Epoch: [028][500/1729]   Freq 46.3   acc 95.085   loss 0.250   domain_acc 100.000   [2018-11-30 14:02:39]
+  Epoch: [028][1000/1729]   Freq 46.3   acc 94.968   loss 0.259   domain_acc 100.000   [2018-11-30 14:05:32]
+  Epoch: [028][1500/1729]   Freq 46.4   acc 95.132   loss 0.250   domain_acc 100.000   [2018-11-30 14:08:24]
+  **Train**  acc 95.178   loss 0.246   domain_acc 100.000   
+
+==>>[2018-11-30 14:09:44] [Epoch=029/200] [Need: 76:00:00]
+  Epoch: [029][000/1729]   Freq 25.8   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 14:09:44]
+  Epoch: [029][500/1729]   Freq 46.5   acc 95.172   loss 0.249   domain_acc 100.000   [2018-11-30 14:12:36]
+  Epoch: [029][1000/1729]   Freq 46.5   acc 95.236   loss 0.243   domain_acc 100.000   [2018-11-30 14:15:28]
+  Epoch: [029][1500/1729]   Freq 46.5   acc 95.182   loss 0.247   domain_acc 100.000   [2018-11-30 14:18:21]
+  **Train**  acc 95.189   loss 0.246   domain_acc 100.000   
+
+==>>[2018-11-30 14:19:41] [Epoch=030/200] [Need: 73:55:23]
+  Epoch: [030][000/1729]   Freq 21.1   acc 100.000   loss 0.009   domain_acc 100.000   [2018-11-30 14:19:42]
+  Epoch: [030][500/1729]   Freq 46.0   acc 94.985   loss 0.253   domain_acc 99.975   [2018-11-30 14:22:35]
+  Epoch: [030][1000/1729]   Freq 46.2   acc 95.117   loss 0.250   domain_acc 99.988   [2018-11-30 14:25:28]
+  Epoch: [030][1500/1729]   Freq 46.3   acc 95.174   loss 0.246   domain_acc 99.992   [2018-11-30 14:28:20]
+  **Train**  acc 95.218   loss 0.245   domain_acc 99.993   
+  **Test**  acc 5.048   map 0.895   
+
+==>>[2018-11-30 14:35:03] [Epoch=031/200] [Need: 72:01:37]
+  Epoch: [031][000/1729]   Freq 17.8   acc 87.500   loss 0.649   domain_acc 100.000   [2018-11-30 14:35:04]
+  Epoch: [031][500/1729]   Freq 46.5   acc 95.247   loss 0.238   domain_acc 100.000   [2018-11-30 14:37:56]
+  Epoch: [031][1000/1729]   Freq 46.6   acc 95.336   loss 0.235   domain_acc 100.000   [2018-11-30 14:40:47]
+  Epoch: [031][1500/1729]   Freq 46.6   acc 95.332   loss 0.237   domain_acc 99.996   [2018-11-30 14:43:39]
+  **Train**  acc 95.232   loss 0.243   domain_acc 99.996   
+
+==>>[2018-11-30 14:44:58] [Epoch=032/200] [Need: 70:37:26]
+  Epoch: [032][000/1729]   Freq 23.1   acc 93.750   loss 0.254   domain_acc 100.000   [2018-11-30 14:44:59]
+  Epoch: [032][500/1729]   Freq 46.5   acc 95.334   loss 0.239   domain_acc 100.000   [2018-11-30 14:47:51]
+  Epoch: [032][1000/1729]   Freq 46.6   acc 95.448   loss 0.233   domain_acc 100.000   [2018-11-30 14:50:42]
+  Epoch: [032][1500/1729]   Freq 46.6   acc 95.245   loss 0.244   domain_acc 99.996   [2018-11-30 14:53:34]
+  **Train**  acc 95.254   loss 0.244   domain_acc 99.989   
+
+==>>[2018-11-30 14:54:53] [Epoch=033/200] [Need: 68:52:19]
+  Epoch: [033][000/1729]   Freq 22.7   acc 100.000   loss 0.005   domain_acc 100.000   [2018-11-30 14:54:54]
+  Epoch: [033][500/1729]   Freq 46.4   acc 95.309   loss 0.239   domain_acc 99.963   [2018-11-30 14:57:46]
+  Epoch: [033][1000/1729]   Freq 46.4   acc 95.111   loss 0.251   domain_acc 99.938   [2018-11-30 15:00:38]
+  Epoch: [033][1500/1729]   Freq 46.5   acc 95.274   loss 0.243   domain_acc 99.950   [2018-11-30 15:03:29]
+  **Train**  acc 95.308   loss 0.241   domain_acc 99.957   
+
+==>>[2018-11-30 15:04:48] [Epoch=034/200] [Need: 67:13:00]
+  Epoch: [034][000/1729]   Freq 22.2   acc 100.000   loss 0.011   domain_acc 100.000   [2018-11-30 15:04:49]
+  Epoch: [034][500/1729]   Freq 46.5   acc 95.309   loss 0.240   domain_acc 99.988   [2018-11-30 15:07:40]
+  Epoch: [034][1000/1729]   Freq 46.5   acc 95.230   loss 0.246   domain_acc 99.988   [2018-11-30 15:10:33]
+  Epoch: [034][1500/1729]   Freq 46.5   acc 95.266   loss 0.242   domain_acc 99.979   [2018-11-30 15:13:25]
+  **Train**  acc 95.337   loss 0.238   domain_acc 99.978   
+
+==>>[2018-11-30 15:14:43] [Epoch=035/200] [Need: 65:38:56]
+  Epoch: [035][000/1729]   Freq 17.1   acc 100.000   loss 0.007   domain_acc 100.000   [2018-11-30 15:14:44]
+  Epoch: [035][500/1729]   Freq 46.3   acc 95.409   loss 0.237   domain_acc 99.963   [2018-11-30 15:17:36]
+  Epoch: [035][1000/1729]   Freq 46.5   acc 95.442   loss 0.232   domain_acc 99.981   [2018-11-30 15:20:28]
+  Epoch: [035][1500/1729]   Freq 46.5   acc 95.366   loss 0.236   domain_acc 99.988   [2018-11-30 15:23:20]
+  **Train**  acc 95.388   loss 0.236   domain_acc 99.989   
+  **Test**  acc 9.382   map 1.660   
+
+==>>[2018-11-30 15:29:50] [Epoch=036/200] [Need: 64:11:22]
+  Epoch: [036][000/1729]   Freq 15.4   acc 100.000   loss 0.006   domain_acc 100.000   [2018-11-30 15:29:51]
+  Epoch: [036][500/1729]   Freq 46.6   acc 95.659   loss 0.221   domain_acc 100.000   [2018-11-30 15:32:42]
+  Epoch: [036][1000/1729]   Freq 46.6   acc 95.492   loss 0.229   domain_acc 99.975   [2018-11-30 15:35:34]
+  Epoch: [036][1500/1729]   Freq 46.6   acc 95.470   loss 0.231   domain_acc 99.983   [2018-11-30 15:38:26]
+  **Train**  acc 95.416   loss 0.233   domain_acc 99.986   
+
+==>>[2018-11-30 15:39:46] [Epoch=037/200] [Need: 63:08:23]
+  Epoch: [037][000/1729]   Freq 28.6   acc 100.000   loss 0.007   domain_acc 100.000   [2018-11-30 15:39:46]
+  Epoch: [037][500/1729]   Freq 46.5   acc 95.758   loss 0.218   domain_acc 100.000   [2018-11-30 15:42:38]
+  Epoch: [037][1000/1729]   Freq 46.5   acc 95.692   loss 0.220   domain_acc 99.994   [2018-11-30 15:45:30]
+  Epoch: [037][1500/1729]   Freq 46.5   acc 95.478   loss 0.230   domain_acc 99.996   [2018-11-30 15:48:22]
+  **Train**  acc 95.449   loss 0.232   domain_acc 99.996   
+
+==>>[2018-11-30 15:49:42] [Epoch=038/200] [Need: 61:46:52]
+  Epoch: [038][000/1729]   Freq 27.0   acc 87.500   loss 0.629   domain_acc 100.000   [2018-11-30 15:49:42]
+  Epoch: [038][500/1729]   Freq 46.4   acc 95.684   loss 0.219   domain_acc 100.000   [2018-11-30 15:52:34]
+  Epoch: [038][1000/1729]   Freq 46.5   acc 95.517   loss 0.224   domain_acc 100.000   [2018-11-30 15:55:26]
+  Epoch: [038][1500/1729]   Freq 46.5   acc 95.507   loss 0.226   domain_acc 100.000   [2018-11-30 15:58:18]
+  **Train**  acc 95.467   loss 0.229   domain_acc 100.000   
+
+==>>[2018-11-30 15:59:37] [Epoch=039/200] [Need: 60:29:06]
+  Epoch: [039][000/1729]   Freq 24.5   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 15:59:38]
+  Epoch: [039][500/1729]   Freq 46.2   acc 95.359   loss 0.231   domain_acc 100.000   [2018-11-30 16:02:31]
+  Epoch: [039][1000/1729]   Freq 46.4   acc 95.548   loss 0.222   domain_acc 99.994   [2018-11-30 16:05:22]
+  Epoch: [039][1500/1729]   Freq 46.4   acc 95.561   loss 0.224   domain_acc 99.996   [2018-11-30 16:08:14]
+  **Train**  acc 95.518   loss 0.225   domain_acc 99.996   
+
+==>>[2018-11-30 16:09:33] [Epoch=040/200] [Need: 59:14:51]
+  Epoch: [040][000/1729]   Freq 29.2   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 16:09:34]
+  Epoch: [040][500/1729]   Freq 46.5   acc 95.484   loss 0.231   domain_acc 100.000   [2018-11-30 16:12:26]
+  Epoch: [040][1000/1729]   Freq 46.5   acc 95.392   loss 0.228   domain_acc 100.000   [2018-11-30 16:15:18]
+  Epoch: [040][1500/1729]   Freq 46.5   acc 95.532   loss 0.223   domain_acc 100.000   [2018-11-30 16:18:10]
+  **Train**  acc 95.547   loss 0.223   domain_acc 100.000   
+  **Test**  acc 5.909   map 1.044   
+
+==>>[2018-11-30 16:24:40] [Epoch=041/200] [Need: 58:05:00]
+  Epoch: [041][000/1729]   Freq 20.2   acc 87.500   loss 0.568   domain_acc 100.000   [2018-11-30 16:24:41]
+  Epoch: [041][500/1729]   Freq 46.5   acc 95.422   loss 0.229   domain_acc 100.000   [2018-11-30 16:27:33]
+  Epoch: [041][1000/1729]   Freq 46.5   acc 95.486   loss 0.226   domain_acc 99.988   [2018-11-30 16:30:25]
+  Epoch: [041][1500/1729]   Freq 46.5   acc 95.524   loss 0.225   domain_acc 99.992   [2018-11-30 16:33:17]
+  **Train**  acc 95.561   loss 0.223   domain_acc 99.989   
+
+==>>[2018-11-30 16:34:36] [Epoch=042/200] [Need: 57:15:42]
+  Epoch: [042][000/1729]   Freq 21.5   acc 87.500   loss 0.545   domain_acc 100.000   [2018-11-30 16:34:37]
+  Epoch: [042][500/1729]   Freq 46.2   acc 95.596   loss 0.220   domain_acc 100.000   [2018-11-30 16:37:30]
+  Epoch: [042][1000/1729]   Freq 46.4   acc 95.548   loss 0.222   domain_acc 99.994   [2018-11-30 16:40:21]
+  Epoch: [042][1500/1729]   Freq 46.5   acc 95.615   loss 0.219   domain_acc 99.988   [2018-11-30 16:43:13]
+  **Train**  acc 95.594   loss 0.221   domain_acc 99.982   
+
+==>>[2018-11-30 16:44:32] [Epoch=043/200] [Need: 56:09:47]
+  Epoch: [043][000/1729]   Freq 23.8   acc 100.000   loss 0.006   domain_acc 100.000   [2018-11-30 16:44:33]
+  Epoch: [043][500/1729]   Freq 46.5   acc 95.696   loss 0.212   domain_acc 99.988   [2018-11-30 16:47:24]
+  Epoch: [043][1000/1729]   Freq 46.4   acc 95.554   loss 0.220   domain_acc 99.975   [2018-11-30 16:50:17]
+  Epoch: [043][1500/1729]   Freq 46.3   acc 95.574   loss 0.218   domain_acc 99.983   [2018-11-30 16:53:10]
+  **Train**  acc 95.615   loss 0.216   domain_acc 99.986   
+
+==>>[2018-11-30 16:54:29] [Epoch=044/200] [Need: 55:06:34]
+  Epoch: [044][000/1729]   Freq 26.5   acc 93.750   loss 0.243   domain_acc 100.000   [2018-11-30 16:54:30]
+  Epoch: [044][500/1729]   Freq 46.2   acc 95.696   loss 0.212   domain_acc 100.000   [2018-11-30 16:57:23]
+  Epoch: [044][1000/1729]   Freq 46.4   acc 95.748   loss 0.210   domain_acc 100.000   [2018-11-30 17:00:14]
+  Epoch: [044][1500/1729]   Freq 46.5   acc 95.682   loss 0.212   domain_acc 100.000   [2018-11-30 17:03:06]
+  **Train**  acc 95.684   loss 0.212   domain_acc 99.996   
+
+==>>[2018-11-30 17:04:26] [Epoch=045/200] [Need: 54:05:44]
+  Epoch: [045][000/1729]   Freq 23.1   acc 93.750   loss 0.232   domain_acc 100.000   [2018-11-30 17:04:27]
+  Epoch: [045][500/1729]   Freq 46.5   acc 95.634   loss 0.212   domain_acc 100.000   [2018-11-30 17:07:19]
+  Epoch: [045][1000/1729]   Freq 46.5   acc 95.754   loss 0.210   domain_acc 100.000   [2018-11-30 17:10:11]
+  Epoch: [045][1500/1729]   Freq 46.4   acc 95.657   loss 0.214   domain_acc 99.992   [2018-11-30 17:13:04]
+  **Train**  acc 95.669   loss 0.214   domain_acc 99.993   
+  **Test**  acc 9.739   map 1.824   
+
+==>>[2018-11-30 17:19:34] [Epoch=046/200] [Need: 53:08:07]
+  Epoch: [046][000/1729]   Freq 23.6   acc 100.000   loss 0.009   domain_acc 100.000   [2018-11-30 17:19:35]
+  Epoch: [046][500/1729]   Freq 45.5   acc 95.372   loss 0.230   domain_acc 100.000   [2018-11-30 17:22:30]
+  Epoch: [046][1000/1729]   Freq 46.1   acc 95.654   loss 0.214   domain_acc 100.000   [2018-11-30 17:25:22]
+  Epoch: [046][1500/1729]   Freq 46.2   acc 95.649   loss 0.214   domain_acc 99.992   [2018-11-30 17:28:14]
+  **Train**  acc 95.716   loss 0.211   domain_acc 99.993   
+
+==>>[2018-11-30 17:29:32] [Epoch=047/200] [Need: 52:28:04]
+  Epoch: [047][000/1729]   Freq 14.2   acc 81.250   loss 0.740   domain_acc 100.000   [2018-11-30 17:29:34]
+  Epoch: [047][500/1729]   Freq 46.3   acc 95.484   loss 0.220   domain_acc 99.975   [2018-11-30 17:32:25]
+  Epoch: [047][1000/1729]   Freq 46.4   acc 95.567   loss 0.216   domain_acc 99.981   [2018-11-30 17:35:18]
+  Epoch: [047][1500/1729]   Freq 46.5   acc 95.586   loss 0.221   domain_acc 99.979   [2018-11-30 17:38:09]
+  **Train**  acc 95.518   loss 0.224   domain_acc 99.982   
+
+==>>[2018-11-30 17:39:28] [Epoch=048/200] [Need: 51:33:02]
+  Epoch: [048][000/1729]   Freq 22.7   acc 100.000   loss 0.004   domain_acc 100.000   [2018-11-30 17:39:29]
+  Epoch: [048][500/1729]   Freq 46.6   acc 96.070   loss 0.194   domain_acc 99.975   [2018-11-30 17:42:20]
+  Epoch: [048][1000/1729]   Freq 46.5   acc 95.673   loss 0.215   domain_acc 99.969   [2018-11-30 17:45:12]
+  Epoch: [048][1500/1729]   Freq 46.6   acc 95.590   loss 0.219   domain_acc 99.975   [2018-11-30 17:48:04]
+  **Train**  acc 95.630   loss 0.216   domain_acc 99.978   
+
+==>>[2018-11-30 17:49:23] [Epoch=049/200] [Need: 50:39:52]
+  Epoch: [049][000/1729]   Freq 28.0   acc 100.000   loss 0.006   domain_acc 100.000   [2018-11-30 17:49:23]
+  Epoch: [049][500/1729]   Freq 46.5   acc 95.709   loss 0.209   domain_acc 100.000   [2018-11-30 17:52:15]
+  Epoch: [049][1000/1729]   Freq 46.6   acc 95.742   loss 0.207   domain_acc 100.000   [2018-11-30 17:55:07]
+  Epoch: [049][1500/1729]   Freq 46.5   acc 95.711   loss 0.209   domain_acc 100.000   [2018-11-30 17:57:59]
+  **Train**  acc 95.753   loss 0.208   domain_acc 100.000   
+
+==>>[2018-11-30 17:59:18] [Epoch=050/200] [Need: 49:48:29]
+  Epoch: [050][000/1729]   Freq 22.3   acc 93.750   loss 0.345   domain_acc 100.000   [2018-11-30 17:59:19]
+  Epoch: [050][500/1729]   Freq 46.4   acc 95.908   loss 0.200   domain_acc 99.988   [2018-11-30 18:02:11]
+  Epoch: [050][1000/1729]   Freq 46.5   acc 95.992   loss 0.198   domain_acc 99.994   [2018-11-30 18:05:03]
+  Epoch: [050][1500/1729]   Freq 46.5   acc 95.790   loss 0.207   domain_acc 99.996   [2018-11-30 18:07:55]
+  **Train**  acc 95.839   loss 0.204   domain_acc 99.996   
+  **Test**  acc 9.412   map 1.612   
+
+==>>[2018-11-30 18:14:25] [Epoch=051/200] [Need: 48:59:36]
+  Epoch: [051][000/1729]   Freq 23.2   acc 100.000   loss 0.005   domain_acc 100.000   [2018-11-30 18:14:25]
+  Epoch: [051][500/1729]   Freq 46.7   acc 96.095   loss 0.192   domain_acc 100.000   [2018-11-30 18:17:16]
+  Epoch: [051][1000/1729]   Freq 46.6   acc 95.854   loss 0.201   domain_acc 100.000   [2018-11-30 18:20:08]
+  Epoch: [051][1500/1729]   Freq 46.5   acc 95.769   loss 0.205   domain_acc 100.000   [2018-11-30 18:23:01]
+  **Train**  acc 95.785   loss 0.204   domain_acc 99.993   
+
+==>>[2018-11-30 18:24:19] [Epoch=052/200] [Need: 48:25:37]
+  Epoch: [052][000/1729]   Freq 17.6   acc 93.750   loss 0.327   domain_acc 100.000   [2018-11-30 18:24:20]
+  Epoch: [052][500/1729]   Freq 46.3   acc 95.659   loss 0.207   domain_acc 99.925   [2018-11-30 18:27:12]
+  Epoch: [052][1000/1729]   Freq 46.4   acc 95.704   loss 0.204   domain_acc 99.963   [2018-11-30 18:30:04]
+  Epoch: [052][1500/1729]   Freq 46.4   acc 95.736   loss 0.205   domain_acc 99.954   [2018-11-30 18:32:56]
+  **Train**  acc 95.792   loss 0.202   domain_acc 99.960   
+
+==>>[2018-11-30 18:34:16] [Epoch=053/200] [Need: 47:38:35]
+  Epoch: [053][000/1729]   Freq 27.0   acc 100.000   loss 0.217   domain_acc 100.000   [2018-11-30 18:34:16]
+  Epoch: [053][500/1729]   Freq 46.4   acc 95.846   loss 0.203   domain_acc 100.000   [2018-11-30 18:37:08]
+  Epoch: [053][1000/1729]   Freq 46.5   acc 95.998   loss 0.197   domain_acc 100.000   [2018-11-30 18:40:00]
+  Epoch: [053][1500/1729]   Freq 46.5   acc 95.894   loss 0.201   domain_acc 100.000   [2018-11-30 18:42:52]
+  **Train**  acc 95.912   loss 0.200   domain_acc 100.000   
+
+==>>[2018-11-30 18:44:11] [Epoch=054/200] [Need: 46:52:55]
+  Epoch: [054][000/1729]   Freq 26.4   acc 100.000   loss 0.032   domain_acc 100.000   [2018-11-30 18:44:12]
+  Epoch: [054][500/1729]   Freq 46.5   acc 96.095   loss 0.189   domain_acc 99.988   [2018-11-30 18:47:04]
+  Epoch: [054][1000/1729]   Freq 46.4   acc 96.060   loss 0.193   domain_acc 99.981   [2018-11-30 18:49:56]
+  Epoch: [054][1500/1729]   Freq 46.3   acc 95.982   loss 0.196   domain_acc 99.988   [2018-11-30 18:52:50]
+  **Train**  acc 95.966   loss 0.198   domain_acc 99.989   
+
+==>>[2018-11-30 18:54:09] [Epoch=055/200] [Need: 46:08:40]
+  Epoch: [055][000/1729]   Freq 24.9   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 18:54:10]
+  Epoch: [055][500/1729]   Freq 46.3   acc 96.395   loss 0.177   domain_acc 100.000   [2018-11-30 18:57:02]
+  Epoch: [055][1000/1729]   Freq 46.4   acc 96.173   loss 0.186   domain_acc 100.000   [2018-11-30 18:59:54]
+  Epoch: [055][1500/1729]   Freq 46.4   acc 96.057   loss 0.192   domain_acc 100.000   [2018-11-30 19:02:47]
+  **Train**  acc 96.009   loss 0.194   domain_acc 99.996   
+  **Test**  acc 4.721   map 0.905   
+
+==>>[2018-11-30 19:09:16] [Epoch=056/200] [Need: 45:26:17]
+  Epoch: [056][000/1729]   Freq 19.1   acc 93.750   loss 0.270   domain_acc 100.000   [2018-11-30 19:09:17]
+  Epoch: [056][500/1729]   Freq 46.5   acc 96.108   loss 0.191   domain_acc 99.988   [2018-11-30 19:12:09]
+  Epoch: [056][1000/1729]   Freq 46.6   acc 96.260   loss 0.183   domain_acc 99.994   [2018-11-30 19:15:00]
+  Epoch: [056][1500/1729]   Freq 46.3   acc 96.144   loss 0.187   domain_acc 99.996   [2018-11-30 19:17:55]
+  **Train**  acc 96.053   loss 0.192   domain_acc 99.996   
+
+==>>[2018-11-30 19:19:15] [Epoch=057/200] [Need: 44:57:03]
+  Epoch: [057][000/1729]   Freq 28.3   acc 100.000   loss 0.007   domain_acc 100.000   [2018-11-30 19:19:16]
+  Epoch: [057][500/1729]   Freq 46.5   acc 96.145   loss 0.185   domain_acc 100.000   [2018-11-30 19:22:07]
+  Epoch: [057][1000/1729]   Freq 46.6   acc 96.204   loss 0.182   domain_acc 100.000   [2018-11-30 19:24:59]
+  Epoch: [057][1500/1729]   Freq 46.5   acc 96.044   loss 0.187   domain_acc 100.000   [2018-11-30 19:27:52]
+  **Train**  acc 96.009   loss 0.190   domain_acc 100.000   
+
+==>>[2018-11-30 19:29:11] [Epoch=058/200] [Need: 44:15:57]
+  Epoch: [058][000/1729]   Freq 24.7   acc 93.750   loss 0.142   domain_acc 100.000   [2018-11-30 19:29:12]
+  Epoch: [058][500/1729]   Freq 46.4   acc 96.008   loss 0.191   domain_acc 100.000   [2018-11-30 19:32:04]
+  Epoch: [058][1000/1729]   Freq 46.5   acc 96.216   loss 0.180   domain_acc 100.000   [2018-11-30 19:34:56]
+  Epoch: [058][1500/1729]   Freq 46.5   acc 96.111   loss 0.186   domain_acc 100.000   [2018-11-30 19:37:47]
+  **Train**  acc 96.056   loss 0.189   domain_acc 100.000   
+
+==>>[2018-11-30 19:39:06] [Epoch=059/200] [Need: 43:35:54]
+  Epoch: [059][000/1729]   Freq 27.7   acc 100.000   loss 0.053   domain_acc 100.000   [2018-11-30 19:39:07]
+  Epoch: [059][500/1729]   Freq 46.4   acc 95.971   loss 0.194   domain_acc 100.000   [2018-11-30 19:41:59]
+  Epoch: [059][1000/1729]   Freq 46.5   acc 96.079   loss 0.190   domain_acc 100.000   [2018-11-30 19:44:51]
+  Epoch: [059][1500/1729]   Freq 46.5   acc 96.119   loss 0.188   domain_acc 100.000   [2018-11-30 19:47:43]
+  **Train**  acc 96.078   loss 0.190   domain_acc 100.000   
+
+==>>[2018-11-30 19:49:02] [Epoch=060/200] [Need: 42:56:53]
+  Epoch: [060][000/1729]   Freq 16.9   acc 100.000   loss 0.008   domain_acc 100.000   [2018-11-30 19:49:03]
+  Epoch: [060][500/1729]   Freq 46.5   acc 96.045   loss 0.185   domain_acc 100.000   [2018-11-30 19:51:55]
+  Epoch: [060][1000/1729]   Freq 46.4   acc 96.091   loss 0.184   domain_acc 100.000   [2018-11-30 19:54:47]
+  Epoch: [060][1500/1729]   Freq 46.5   acc 96.111   loss 0.186   domain_acc 99.992   [2018-11-30 19:57:39]
+  **Train**  acc 96.092   loss 0.187   domain_acc 99.982   
+  **Test**  acc 10.986   map 2.029   
+
+==>>[2018-11-30 20:04:08] [Epoch=061/200] [Need: 42:19:28]
+  Epoch: [061][000/1729]   Freq 23.7   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 20:04:09]
+  Epoch: [061][500/1729]   Freq 46.6   acc 95.996   loss 0.190   domain_acc 99.975   [2018-11-30 20:07:00]
+  Epoch: [061][1000/1729]   Freq 46.6   acc 96.004   loss 0.193   domain_acc 99.988   [2018-11-30 20:09:52]
+  Epoch: [061][1500/1729]   Freq 46.6   acc 96.086   loss 0.190   domain_acc 99.992   [2018-11-30 20:12:43]
+  **Train**  acc 96.190   loss 0.185   domain_acc 99.993   
+
+==>>[2018-11-30 20:14:02] [Epoch=062/200] [Need: 41:53:21]
+  Epoch: [062][000/1729]   Freq 27.4   acc 93.750   loss 0.235   domain_acc 100.000   [2018-11-30 20:14:03]
+  Epoch: [062][500/1729]   Freq 46.5   acc 96.470   loss 0.173   domain_acc 99.963   [2018-11-30 20:16:54]
+  Epoch: [062][1000/1729]   Freq 46.5   acc 96.241   loss 0.182   domain_acc 99.981   [2018-11-30 20:19:47]
+  Epoch: [062][1500/1729]   Freq 46.5   acc 96.277   loss 0.180   domain_acc 99.988   [2018-11-30 20:22:39]
+  **Train**  acc 96.241   loss 0.182   domain_acc 99.989   
+
+==>>[2018-11-30 20:23:58] [Epoch=063/200] [Need: 41:16:50]
+  Epoch: [063][000/1729]   Freq 29.0   acc 100.000   loss 0.012   domain_acc 100.000   [2018-11-30 20:23:59]
+  Epoch: [063][500/1729]   Freq 46.5   acc 96.420   loss 0.175   domain_acc 100.000   [2018-11-30 20:26:50]
+  Epoch: [063][1000/1729]   Freq 46.4   acc 96.316   loss 0.178   domain_acc 100.000   [2018-11-30 20:29:44]
+  Epoch: [063][1500/1729]   Freq 46.4   acc 96.323   loss 0.179   domain_acc 100.000   [2018-11-30 20:32:35]
+  **Train**  acc 96.313   loss 0.180   domain_acc 100.000   
+
+==>>[2018-11-30 20:33:54] [Epoch=064/200] [Need: 40:41:10]
+  Epoch: [064][000/1729]   Freq 26.6   acc 81.250   loss 1.018   domain_acc 100.000   [2018-11-30 20:33:55]
+  Epoch: [064][500/1729]   Freq 46.5   acc 96.183   loss 0.181   domain_acc 100.000   [2018-11-30 20:36:47]
+  Epoch: [064][1000/1729]   Freq 46.5   acc 96.454   loss 0.171   domain_acc 100.000   [2018-11-30 20:39:39]
+  Epoch: [064][1500/1729]   Freq 46.5   acc 96.357   loss 0.177   domain_acc 100.000   [2018-11-30 20:42:30]
+  **Train**  acc 96.320   loss 0.179   domain_acc 100.000   
+
+==>>[2018-11-30 20:43:50] [Epoch=065/200] [Need: 40:06:19]
+  Epoch: [065][000/1729]   Freq 18.2   acc 100.000   loss 0.006   domain_acc 100.000   [2018-11-30 20:43:51]
+  Epoch: [065][500/1729]   Freq 46.4   acc 96.432   loss 0.173   domain_acc 100.000   [2018-11-30 20:46:43]
+  Epoch: [065][1000/1729]   Freq 46.5   acc 96.310   loss 0.178   domain_acc 100.000   [2018-11-30 20:49:34]
+  Epoch: [065][1500/1729]   Freq 46.5   acc 96.373   loss 0.175   domain_acc 100.000   [2018-11-30 20:52:26]
+  **Train**  acc 96.313   loss 0.178   domain_acc 100.000   
+  **Test**  acc 8.135   map 1.446   
+
+==>>[2018-11-30 20:58:51] [Epoch=066/200] [Need: 39:32:40]
+  Epoch: [066][000/1729]   Freq 12.4   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 20:58:53]
+  Epoch: [066][500/1729]   Freq 46.4   acc 96.158   loss 0.182   domain_acc 100.000   [2018-11-30 21:01:44]
+  Epoch: [066][1000/1729]   Freq 46.4   acc 96.241   loss 0.182   domain_acc 100.000   [2018-11-30 21:04:36]
+  Epoch: [066][1500/1729]   Freq 46.5   acc 96.377   loss 0.177   domain_acc 100.000   [2018-11-30 21:07:28]
+  **Train**  acc 96.371   loss 0.176   domain_acc 100.000   
+
+==>>[2018-11-30 21:08:47] [Epoch=067/200] [Need: 39:09:06]
+  Epoch: [067][000/1729]   Freq 22.5   acc 93.750   loss 0.249   domain_acc 100.000   [2018-11-30 21:08:48]
+  Epoch: [067][500/1729]   Freq 46.3   acc 96.270   loss 0.183   domain_acc 100.000   [2018-11-30 21:11:40]
+  Epoch: [067][1000/1729]   Freq 46.4   acc 96.310   loss 0.180   domain_acc 100.000   [2018-11-30 21:14:32]
+  Epoch: [067][1500/1729]   Freq 46.5   acc 96.407   loss 0.176   domain_acc 100.000   [2018-11-30 21:17:24]
+  **Train**  acc 96.378   loss 0.178   domain_acc 100.000   
+
+==>>[2018-11-30 21:18:43] [Epoch=068/200] [Need: 38:36:13]
+  Epoch: [068][000/1729]   Freq 10.3   acc 100.000   loss 0.005   domain_acc 100.000   [2018-11-30 21:18:45]
+  Epoch: [068][500/1729]   Freq 46.2   acc 96.594   loss 0.162   domain_acc 100.000   [2018-11-30 21:21:37]
+  Epoch: [068][1000/1729]   Freq 46.3   acc 96.560   loss 0.167   domain_acc 100.000   [2018-11-30 21:24:29]
+  Epoch: [068][1500/1729]   Freq 46.4   acc 96.498   loss 0.173   domain_acc 100.000   [2018-11-30 21:27:21]
+  **Train**  acc 96.457   loss 0.174   domain_acc 100.000   
+
+==>>[2018-11-30 21:28:40] [Epoch=069/200] [Need: 38:04:02]
+  Epoch: [069][000/1729]   Freq 25.3   acc 100.000   loss 0.008   domain_acc 100.000   [2018-11-30 21:28:41]
+  Epoch: [069][500/1729]   Freq 46.3   acc 96.170   loss 0.183   domain_acc 100.000   [2018-11-30 21:31:34]
+  Epoch: [069][1000/1729]   Freq 46.4   acc 96.397   loss 0.176   domain_acc 100.000   [2018-11-30 21:34:26]
+  Epoch: [069][1500/1729]   Freq 46.3   acc 96.419   loss 0.175   domain_acc 100.000   [2018-11-30 21:37:19]
+  **Train**  acc 96.447   loss 0.174   domain_acc 100.000   
+
+==>>[2018-11-30 21:38:38] [Epoch=070/200] [Need: 37:32:31]
+  Epoch: [070][000/1729]   Freq 29.6   acc 100.000   loss 0.002   domain_acc 100.000   [2018-11-30 21:38:39]
+  Epoch: [070][500/1729]   Freq 46.1   acc 96.183   loss 0.180   domain_acc 99.988   [2018-11-30 21:41:32]
+  Epoch: [070][1000/1729]   Freq 46.3   acc 96.422   loss 0.172   domain_acc 99.994   [2018-11-30 21:44:24]
+  Epoch: [070][1500/1729]   Freq 46.3   acc 96.461   loss 0.171   domain_acc 99.996   [2018-11-30 21:47:17]
+  **Train**  acc 96.436   loss 0.173   domain_acc 99.996   
+  **Test**  acc 7.363   map 1.311   
+
+==>>[2018-11-30 21:53:45] [Epoch=071/200] [Need: 37:02:06]
+  Epoch: [071][000/1729]   Freq 21.5   acc 100.000   loss 0.004   domain_acc 100.000   [2018-11-30 21:53:46]
+  Epoch: [071][500/1729]   Freq 46.6   acc 96.682   loss 0.158   domain_acc 100.000   [2018-11-30 21:56:37]
+  Epoch: [071][1000/1729]   Freq 46.6   acc 96.560   loss 0.168   domain_acc 100.000   [2018-11-30 21:59:29]
+  Epoch: [071][1500/1729]   Freq 46.6   acc 96.544   loss 0.167   domain_acc 100.000   [2018-11-30 22:02:21]
+  **Train**  acc 96.508   loss 0.170   domain_acc 100.000   
+
+==>>[2018-11-30 22:03:41] [Epoch=072/200] [Need: 36:40:33]
+  Epoch: [072][000/1729]   Freq 23.9   acc 100.000   loss 0.012   domain_acc 100.000   [2018-11-30 22:03:42]
+  Epoch: [072][500/1729]   Freq 46.4   acc 96.607   loss 0.161   domain_acc 100.000   [2018-11-30 22:06:34]
+  Epoch: [072][1000/1729]   Freq 46.5   acc 96.578   loss 0.165   domain_acc 99.994   [2018-11-30 22:09:25]
+  Epoch: [072][1500/1729]   Freq 46.5   acc 96.569   loss 0.168   domain_acc 99.996   [2018-11-30 22:12:17]
+  **Train**  acc 96.497   loss 0.171   domain_acc 99.996   
+
+==>>[2018-11-30 22:13:36] [Epoch=073/200] [Need: 36:10:32]
+  Epoch: [073][000/1729]   Freq 25.4   acc 100.000   loss 0.003   domain_acc 100.000   [2018-11-30 22:13:37]
+  Epoch: [073][500/1729]   Freq 46.5   acc 96.532   loss 0.169   domain_acc 100.000   [2018-11-30 22:16:29]
+  Epoch: [073][1000/1729]   Freq 46.6   acc 96.547   loss 0.167   domain_acc 100.000   [2018-11-30 22:19:20]
+  Epoch: [073][1500/1729]   Freq 46.5   acc 96.494   loss 0.169   domain_acc 100.000   [2018-11-30 22:22:12]
+  **Train**  acc 96.519   loss 0.168   domain_acc 100.000   
+
+==>>[2018-11-30 22:23:31] [Epoch=074/200] [Need: 35:41:04]
+  Epoch: [074][000/1729]   Freq 17.7   acc 100.000   loss 0.010   domain_acc 100.000   [2018-11-30 22:23:32]
+  Epoch: [074][500/1729]   Freq 46.4   acc 96.519   loss 0.166   domain_acc 100.000   [2018-11-30 22:26:24]
+  Epoch: [074][1000/1729]   Freq 46.5   acc 96.635   loss 0.161   domain_acc 100.000   [2018-11-30 22:29:16]
+  Epoch: [074][1500/1729]   Freq 46.5   acc 96.590   loss 0.164   domain_acc 100.000   [2018-11-30 22:32:08]
+  **Train**  acc 96.548   loss 0.167   domain_acc 100.000   
+
+==>>[2018-11-30 22:33:27] [Epoch=075/200] [Need: 35:12:08]
+  Epoch: [075][000/1729]   Freq 16.9   acc 93.750   loss 0.234   domain_acc 100.000   [2018-11-30 22:33:28]
+  Epoch: [075][500/1729]   Freq 46.3   acc 96.495   loss 0.164   domain_acc 100.000   [2018-11-30 22:36:20]
+  Epoch: [075][1000/1729]   Freq 46.4   acc 96.510   loss 0.169   domain_acc 100.000   [2018-11-30 22:39:12]
+  Epoch: [075][1500/1729]   Freq 46.5   acc 96.544   loss 0.169   domain_acc 100.000   [2018-11-30 22:42:04]
+  **Train**  acc 96.617   loss 0.165   domain_acc 100.000   
+  **Test**  acc 3.593   map 0.729   
+
+==>>[2018-11-30 22:48:31] [Epoch=076/200] [Need: 34:44:07]
+  Epoch: [076][000/1729]   Freq 19.8   acc 100.000   loss 0.021   domain_acc 100.000   [2018-11-30 22:48:32]
+  Epoch: [076][500/1729]   Freq 46.6   acc 96.682   loss 0.158   domain_acc 100.000   [2018-11-30 22:51:24]
+  Epoch: [076][1000/1729]   Freq 46.5   acc 96.641   loss 0.162   domain_acc 100.000   [2018-11-30 22:54:16]
+  Epoch: [076][1500/1729]   Freq 46.5   acc 96.652   loss 0.162   domain_acc 100.000   [2018-11-30 22:57:08]
+  **Train**  acc 96.656   loss 0.162   domain_acc 100.000   
+
+==>>[2018-11-30 22:58:27] [Epoch=077/200] [Need: 34:24:06]
+  Epoch: [077][000/1729]   Freq 24.3   acc 100.000   loss 0.005   domain_acc 100.000   [2018-11-30 22:58:28]
+  Epoch: [077][500/1729]   Freq 46.3   acc 96.669   loss 0.162   domain_acc 100.000   [2018-11-30 23:01:20]
+  Epoch: [077][1000/1729]   Freq 46.4   acc 96.578   loss 0.165   domain_acc 100.000   [2018-11-30 23:04:12]
+  Epoch: [077][1500/1729]   Freq 46.5   acc 96.594   loss 0.163   domain_acc 100.000   [2018-11-30 23:07:04]
+  **Train**  acc 96.562   loss 0.165   domain_acc 100.000   
+
+==>>[2018-11-30 23:08:23] [Epoch=078/200] [Need: 33:56:29]
+  Epoch: [078][000/1729]   Freq 28.5   acc 100.000   loss 0.007   domain_acc 100.000   [2018-11-30 23:08:24]
+  Epoch: [078][500/1729]   Freq 46.4   acc 96.644   loss 0.162   domain_acc 99.988   [2018-11-30 23:11:16]
+  Epoch: [078][1000/1729]   Freq 46.5   acc 96.728   loss 0.160   domain_acc 99.994   [2018-11-30 23:14:07]
+  Epoch: [078][1500/1729]   Freq 46.5   acc 96.648   loss 0.163   domain_acc 99.996   [2018-11-30 23:17:00]
+  **Train**  acc 96.617   loss 0.165   domain_acc 99.996   
+
+==>>[2018-11-30 23:18:19] [Epoch=079/200] [Need: 33:29:18]
+  Epoch: [079][000/1729]   Freq 28.2   acc 87.500   loss 0.867   domain_acc 100.000   [2018-11-30 23:18:20]
+  Epoch: [079][500/1729]   Freq 46.4   acc 96.482   loss 0.169   domain_acc 100.000   [2018-11-30 23:21:12]
+  Epoch: [079][1000/1729]   Freq 46.4   acc 96.672   loss 0.161   domain_acc 99.994   [2018-11-30 23:24:04]
+  Epoch: [079][1500/1729]   Freq 46.5   acc 96.698   loss 0.160   domain_acc 99.992   [2018-11-30 23:26:56]
+  **Train**  acc 96.671   loss 0.161   domain_acc 99.993   
+
+==>>[2018-11-30 23:28:15] [Epoch=080/200] [Need: 33:02:34]
+  Epoch: [080][000/1729]   Freq 28.0   acc 93.750   loss 0.276   domain_acc 100.000   [2018-11-30 23:28:16]
+  Epoch: [080][500/1729]   Freq 46.4   acc 96.407   loss 0.169   domain_acc 100.000   [2018-11-30 23:31:08]
+  Epoch: [080][1000/1729]   Freq 46.5   acc 96.535   loss 0.165   domain_acc 100.000   [2018-11-30 23:33:59]
+  Epoch: [080][1500/1729]   Freq 46.5   acc 96.465   loss 0.170   domain_acc 100.000   [2018-11-30 23:36:52]
+  **Train**  acc 96.519   loss 0.168   domain_acc 100.000   
+  **Test**  acc 6.235   map 1.117   
+
+==>>[2018-11-30 23:43:20] [Epoch=081/200] [Need: 32:36:35]
+  Epoch: [081][000/1729]   Freq 22.3   acc 87.500   loss 0.328   domain_acc 100.000   [2018-11-30 23:43:20]
+  Epoch: [081][500/1729]   Freq 46.7   acc 96.994   loss 0.139   domain_acc 100.000   [2018-11-30 23:46:11]
+  Epoch: [081][1000/1729]   Freq 46.6   acc 96.653   loss 0.157   domain_acc 100.000   [2018-11-30 23:49:03]
+  Epoch: [081][1500/1729]   Freq 46.6   acc 96.636   loss 0.160   domain_acc 99.996   [2018-11-30 23:51:55]
+  **Train**  acc 96.664   loss 0.159   domain_acc 99.996   
+
+==>>[2018-11-30 23:53:14] [Epoch=082/200] [Need: 32:17:46]
+  Epoch: [082][000/1729]   Freq 13.6   acc 100.000   loss 0.005   domain_acc 100.000   [2018-11-30 23:53:15]
+  Epoch: [082][500/1729]   Freq 46.3   acc 96.769   loss 0.151   domain_acc 99.975   [2018-11-30 23:56:07]
+  Epoch: [082][1000/1729]   Freq 46.4   acc 96.722   loss 0.155   domain_acc 99.988   [2018-11-30 23:58:59]
+  Epoch: [082][1500/1729]   Freq 46.5   acc 96.740   loss 0.156   domain_acc 99.992   [2018-12-01 00:01:51]
+  **Train**  acc 96.732   loss 0.156   domain_acc 99.993   
+
+==>>[2018-12-01 00:03:10] [Epoch=083/200] [Need: 31:52:06]
+  Epoch: [083][000/1729]   Freq 27.1   acc 93.750   loss 0.085   domain_acc 100.000   [2018-12-01 00:03:11]
+  Epoch: [083][500/1729]   Freq 46.4   acc 96.632   loss 0.155   domain_acc 100.000   [2018-12-01 00:06:03]
+  Epoch: [083][1000/1729]   Freq 46.5   acc 96.747   loss 0.152   domain_acc 100.000   [2018-12-01 00:08:54]
+  Epoch: [083][1500/1729]   Freq 46.5   acc 96.744   loss 0.154   domain_acc 100.000   [2018-12-01 00:11:47]
+  **Train**  acc 96.750   loss 0.154   domain_acc 100.000   
+
+==>>[2018-12-01 00:13:06] [Epoch=084/200] [Need: 31:26:48]
+  Epoch: [084][000/1729]   Freq 28.2   acc 93.750   loss 0.328   domain_acc 100.000   [2018-12-01 00:13:07]
+  Epoch: [084][500/1729]   Freq 46.5   acc 96.919   loss 0.144   domain_acc 100.000   [2018-12-01 00:15:59]
+  Epoch: [084][1000/1729]   Freq 46.4   acc 96.791   loss 0.151   domain_acc 100.000   [2018-12-01 00:18:51]
+  Epoch: [084][1500/1729]   Freq 46.5   acc 96.831   loss 0.150   domain_acc 100.000   [2018-12-01 00:21:43]
+  **Train**  acc 96.754   loss 0.154   domain_acc 100.000   
+
+==>>[2018-12-01 00:23:02] [Epoch=085/200] [Need: 31:01:52]
+  Epoch: [085][000/1729]   Freq 27.9   acc 93.750   loss 0.223   domain_acc 100.000   [2018-12-01 00:23:03]
+  Epoch: [085][500/1729]   Freq 46.5   acc 97.143   loss 0.133   domain_acc 100.000   [2018-12-01 00:25:54]
+  Epoch: [085][1000/1729]   Freq 46.5   acc 96.959   loss 0.144   domain_acc 100.000   [2018-12-01 00:28:46]
+  Epoch: [085][1500/1729]   Freq 46.5   acc 96.877   loss 0.149   domain_acc 100.000   [2018-12-01 00:31:38]
+  **Train**  acc 96.823   loss 0.151   domain_acc 100.000   
+  **Test**  acc 5.552   map 0.998   
+
+==>>[2018-12-01 00:38:06] [Epoch=086/200] [Need: 30:37:36]
+  Epoch: [086][000/1729]   Freq 21.5   acc 100.000   loss 0.005   domain_acc 100.000   [2018-12-01 00:38:06]
+  Epoch: [086][500/1729]   Freq 46.7   acc 96.931   loss 0.144   domain_acc 100.000   [2018-12-01 00:40:57]
+  Epoch: [086][1000/1729]   Freq 46.6   acc 96.841   loss 0.148   domain_acc 100.000   [2018-12-01 00:43:49]
+  Epoch: [086][1500/1729]   Freq 46.6   acc 96.790   loss 0.151   domain_acc 100.000   [2018-12-01 00:46:41]
+  **Train**  acc 96.747   loss 0.153   domain_acc 100.000   
+
+==>>[2018-12-01 00:48:00] [Epoch=087/200] [Need: 30:19:45]
+  Epoch: [087][000/1729]   Freq 17.2   acc 87.500   loss 0.422   domain_acc 100.000   [2018-12-01 00:48:01]
+  Epoch: [087][500/1729]   Freq 46.3   acc 96.532   loss 0.163   domain_acc 100.000   [2018-12-01 00:50:54]
+  Epoch: [087][1000/1729]   Freq 46.5   acc 96.716   loss 0.154   domain_acc 100.000   [2018-12-01 00:53:45]
+  Epoch: [087][1500/1729]   Freq 46.5   acc 96.665   loss 0.156   domain_acc 100.000   [2018-12-01 00:56:37]
+  **Train**  acc 96.660   loss 0.156   domain_acc 100.000   
+
+==>>[2018-12-01 00:57:56] [Epoch=088/200] [Need: 29:55:42]
+  Epoch: [088][000/1729]   Freq 16.2   acc 87.500   loss 0.565   domain_acc 100.000   [2018-12-01 00:57:57]
+  Epoch: [088][500/1729]   Freq 46.5   acc 96.994   loss 0.137   domain_acc 100.000   [2018-12-01 01:00:48]
+  Epoch: [088][1000/1729]   Freq 46.5   acc 96.816   loss 0.146   domain_acc 100.000   [2018-12-01 01:03:41]
+  Epoch: [088][1500/1729]   Freq 46.5   acc 96.802   loss 0.148   domain_acc 100.000   [2018-12-01 01:06:33]
+  **Train**  acc 96.786   loss 0.150   domain_acc 100.000   
+
+==>>[2018-12-01 01:07:52] [Epoch=089/200] [Need: 29:31:58]
+  Epoch: [089][000/1729]   Freq 25.1   acc 100.000   loss 0.004   domain_acc 100.000   [2018-12-01 01:07:53]
+  Epoch: [089][500/1729]   Freq 46.4   acc 96.831   loss 0.146   domain_acc 100.000   [2018-12-01 01:10:45]
+  Epoch: [089][1000/1729]   Freq 46.4   acc 96.672   loss 0.154   domain_acc 100.000   [2018-12-01 01:13:37]
+  Epoch: [089][1500/1729]   Freq 46.4   acc 96.765   loss 0.149   domain_acc 100.000   [2018-12-01 01:16:29]
+  **Train**  acc 96.790   loss 0.148   domain_acc 100.000   
+
+==>>[2018-12-01 01:17:48] [Epoch=090/200] [Need: 29:08:33]
+  Epoch: [090][000/1729]   Freq 23.4   acc 93.750   loss 0.361   domain_acc 100.000   [2018-12-01 01:17:49]
+  Epoch: [090][500/1729]   Freq 46.4   acc 96.682   loss 0.153   domain_acc 100.000   [2018-12-01 01:20:41]
+  Epoch: [090][1000/1729]   Freq 46.4   acc 96.641   loss 0.154   domain_acc 100.000   [2018-12-01 01:23:33]
+  Epoch: [090][1500/1729]   Freq 46.4   acc 96.706   loss 0.152   domain_acc 100.000   [2018-12-01 01:26:25]
+  **Train**  acc 96.700   loss 0.153   domain_acc 100.000   
+  **Test**  acc 1.871   map 0.498   
+
+==>>[2018-12-01 01:32:55] [Epoch=091/200] [Need: 28:45:42]
+  Epoch: [091][000/1729]   Freq 18.4   acc 100.000   loss 0.005   domain_acc 100.000   [2018-12-01 01:32:55]
+  Epoch: [091][500/1729]   Freq 46.6   acc 96.856   loss 0.141   domain_acc 100.000   [2018-12-01 01:35:47]
+  Epoch: [091][1000/1729]   Freq 46.5   acc 96.884   loss 0.141   domain_acc 100.000   [2018-12-01 01:38:39]
+  Epoch: [091][1500/1729]   Freq 46.5   acc 96.827   loss 0.146   domain_acc 100.000   [2018-12-01 01:41:31]
+  **Train**  acc 96.805   loss 0.147   domain_acc 100.000   
+
+==>>[2018-12-01 01:42:50] [Epoch=092/200] [Need: 28:28:44]
+  Epoch: [092][000/1729]   Freq 9.6   acc 81.250   loss 0.751   domain_acc 100.000   [2018-12-01 01:42:52]
+  Epoch: [092][500/1729]   Freq 46.2   acc 96.582   loss 0.156   domain_acc 100.000   [2018-12-01 01:45:44]
+  Epoch: [092][1000/1729]   Freq 46.3   acc 96.660   loss 0.152   domain_acc 100.000   [2018-12-01 01:48:36]
+  Epoch: [092][1500/1729]   Freq 46.4   acc 96.827   loss 0.146   domain_acc 100.000   [2018-12-01 01:51:28]
+  **Train**  acc 96.812   loss 0.148   domain_acc 100.000   
+
+==>>[2018-12-01 01:52:47] [Epoch=093/200] [Need: 28:06:05]
+  Epoch: [093][000/1729]   Freq 27.0   acc 93.750   loss 0.284   domain_acc 100.000   [2018-12-01 01:52:47]
+  Epoch: [093][500/1729]   Freq 46.3   acc 96.931   loss 0.141   domain_acc 100.000   [2018-12-01 01:55:40]
+  Epoch: [093][1000/1729]   Freq 46.4   acc 96.803   loss 0.147   domain_acc 100.000   [2018-12-01 01:58:32]
+  Epoch: [093][1500/1729]   Freq 46.5   acc 96.831   loss 0.146   domain_acc 100.000   [2018-12-01 02:01:24]
+  **Train**  acc 96.837   loss 0.146   domain_acc 100.000   
+
+==>>[2018-12-01 02:02:43] [Epoch=094/200] [Need: 27:43:41]
+  Epoch: [094][000/1729]   Freq 28.6   acc 100.000   loss 0.004   domain_acc 100.000   [2018-12-01 02:02:44]
+  Epoch: [094][500/1729]   Freq 46.4   acc 96.744   loss 0.145   domain_acc 100.000   [2018-12-01 02:05:36]
+  Epoch: [094][1000/1729]   Freq 46.5   acc 96.916   loss 0.138   domain_acc 100.000   [2018-12-01 02:08:28]
+  Epoch: [094][1500/1729]   Freq 46.4   acc 96.827   loss 0.141   domain_acc 100.000   [2018-12-01 02:11:20]
+  **Train**  acc 96.805   loss 0.143   domain_acc 100.000   
+
+==>>[2018-12-01 02:12:39] [Epoch=095/200] [Need: 27:21:33]
+  Epoch: [095][000/1729]   Freq 24.1   acc 100.000   loss 0.007   domain_acc 100.000   [2018-12-01 02:12:40]
+  Epoch: [095][500/1729]   Freq 46.4   acc 96.644   loss 0.150   domain_acc 100.000   [2018-12-01 02:15:32]
+  Epoch: [095][1000/1729]   Freq 46.5   acc 96.897   loss 0.137   domain_acc 100.000   [2018-12-01 02:18:23]
+  Epoch: [095][1500/1729]   Freq 46.5   acc 96.885   loss 0.138   domain_acc 100.000   [2018-12-01 02:21:15]
+  **Train**  acc 96.844   loss 0.141   domain_acc 100.000   
+  **Test**  acc 5.166   map 1.017   
+
+==>>[2018-12-01 02:27:43] [Epoch=096/200] [Need: 26:59:56]
+  Epoch: [096][000/1729]   Freq 19.6   acc 100.000   loss 0.022   domain_acc 100.000   [2018-12-01 02:27:44]
+  Epoch: [096][500/1729]   Freq 46.6   acc 96.694   loss 0.143   domain_acc 100.000   [2018-12-01 02:30:35]
+  Epoch: [096][1000/1729]   Freq 46.5   acc 96.747   loss 0.143   domain_acc 100.000   [2018-12-01 02:33:27]
+  Epoch: [096][1500/1729]   Freq 46.6   acc 96.765   loss 0.142   domain_acc 100.000   [2018-12-01 02:36:19]
+  **Train**  acc 96.783   loss 0.143   domain_acc 100.000   
+
+==>>[2018-12-01 02:37:38] [Epoch=097/200] [Need: 26:43:33]
+  Epoch: [097][000/1729]   Freq 28.0   acc 100.000   loss 0.005   domain_acc 100.000   [2018-12-01 02:37:39]
+  Epoch: [097][500/1729]   Freq 46.5   acc 96.657   loss 0.143   domain_acc 100.000   [2018-12-01 02:40:31]
+  Epoch: [097][1000/1729]   Freq 46.5   acc 96.778   loss 0.139   domain_acc 100.000   [2018-12-01 02:43:22]
+  Epoch: [097][1500/1729]   Freq 46.6   acc 96.823   loss 0.139   domain_acc 100.000   [2018-12-01 02:46:14]
+  **Train**  acc 96.862   loss 0.138   domain_acc 100.000   
+
+==>>[2018-12-01 02:47:33] [Epoch=098/200] [Need: 26:22:02]
+  Epoch: [098][000/1729]   Freq 24.6   acc 93.750   loss 0.305   domain_acc 100.000   [2018-12-01 02:47:34]
+  Epoch: [098][500/1729]   Freq 46.6   acc 96.969   loss 0.134   domain_acc 100.000   [2018-12-01 02:50:25]
+  Epoch: [098][1000/1729]   Freq 26.3   acc 96.928   loss 0.135   domain_acc 100.000   [2018-12-01 02:57:41]
+  Epoch: [098][1500/1729]   Freq 19.2   acc 96.969   loss 0.134   domain_acc 100.000   [2018-12-01 03:08:25]
+  **Train**  acc 96.960   loss 0.135   domain_acc 100.000   
+
+==>>[2018-12-01 03:12:08] [Epoch=099/200] [Need: 26:15:52]
+  Epoch: [099][000/1729]   Freq 4.2   acc 100.000   loss 0.007   domain_acc 100.000   [2018-12-01 03:12:12]
+  Epoch: [099][500/1729]   Freq 16.5   acc 97.018   loss 0.126   domain_acc 100.000   [2018-12-01 03:20:12]
+  Epoch: [099][1000/1729]   Freq 24.4   acc 97.003   loss 0.127   domain_acc 100.000   [2018-12-01 03:23:05]
+  Epoch: [099][1500/1729]   Freq 29.0   acc 96.927   loss 0.133   domain_acc 100.000   [2018-12-01 03:25:57]
+  **Train**  acc 96.917   loss 0.134   domain_acc 100.000   
+
+==>>[2018-12-01 03:27:16] [Epoch=100/200] [Need: 25:59:47]
+  Epoch: [100][000/1729]   Freq 23.7   acc 75.000   loss 0.733   domain_acc 100.000   [2018-12-01 03:27:16]
+  Epoch: [100][500/1729]   Freq 45.6   acc 96.632   loss 0.145   domain_acc 100.000   [2018-12-01 03:30:12]
+  Epoch: [100][1000/1729]   Freq 46.1   acc 96.822   loss 0.137   domain_acc 100.000   [2018-12-01 03:33:03]
+  Epoch: [100][1500/1729]   Freq 46.3   acc 96.935   loss 0.133   domain_acc 100.000   [2018-12-01 03:35:55]
